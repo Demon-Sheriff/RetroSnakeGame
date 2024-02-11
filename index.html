@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&family=VT323&display=swap" rel="stylesheet">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="main-container">
+        <div class="game-visuals">
+            <div class="scores">
+                <h1 id="score">Score 0000</h1>
+                <h1 id="highScore">High Score 0000</h1>
+            </div>
+            <div class="game-border-1">
+                <div class="game-border-2">
+                    <div class="game-border-3">
+                        <div id="game-board">
+                            <div id="instruction-text"><h1 >Press spacebar to start the game or use the Controls</h1></div>
+                            <div id="logo"><img src="images/snake-game-ai-gen.png" alt="snake-logo"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div class="user-controller">
+            <div class="heading"><h1>Controls</h1></div>
+            <div class="controls">
+                <div class="control-button" id="up">&#8593;</div>
+                <div class="control-button" id="right">&#8594;</div>
+                <div class="control-button" id="left">&#8592;</div>
+                <div class="control-button" id="down">&#8595;</div>
+            </div>
+        </div>
+    </div> 
+    <div class="game-over"><h1><b>Press Space bar to continue</b></h1><img src="images/GameOver.png"></div>
+</body>
+</html>

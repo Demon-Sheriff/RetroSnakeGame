@@ -1,0 +1,144 @@
+body {
+
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background-color : red;
+    margin:0;
+    font-family: 'VT323', monospace;
+}
+
+.main-container{
+    height: 100vh;
+    width: 100vh;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.user-controller{
+    border: 2px solid black;
+    width: 20vh;
+    height: 20vh;
+    background-color: #222222;
+    padding: 20px;
+    border-radius:2vh;
+}
+
+body,.snake {
+    background-color: #414141;
+
+}
+
+#game-board{
+    border-radius: 100px;
+    display: grid;
+    grid-template-rows: repeat(20,20px);
+    grid-template-columns: repeat(20,20px);
+    margin: 5px;
+}
+
+.game-border-1{
+    border: #595f43 solid 10px;
+    border-radius: 30px;
+    box-shadow: inset 0 0 0 10px #595f43;
+}
+
+.game-border-2{
+    border: #abb78a solid 8px;
+    border-radius: 30px;
+    box-shadow: inset 0 0 0 10px #abb78a;
+}
+
+.game-border-3{
+    border: #8b966c solid 30px;
+    border-radius: 30px;
+    box-shadow: inset 0 0 0 5px #8b966c;
+}
+
+#instruction-text{
+    position:absolute;
+    top: 60%;
+    color: #222222;
+    width: 350px;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 30px;
+    margin:0;
+}
+
+.scores{
+    display: flex;
+    justify-content: space-between;
+}
+
+#score{
+    font-weight: bolder;
+    margin:10px 0;
+    color: #abb78a;
+}
+
+#highScore{
+    font-weight: bolder;
+    margin: 10px 0;
+   /*  for now display will be kept to none    */
+   display:none;
+}
+
+.game-border-3, #logo{
+    background-color: #c4cfa3;
+}
+
+.snake {
+    border : #5a5a5a 1px dotted;
+}
+
+.food {
+    background-color: #dedede;
+    background-color: orangered;
+    border: #999 5px solid;
+}
+
+#logo {
+    position: absolute;
+    align-content: center;
+    max-width: 100%; /* Ensure the image doesn't exceed the container width */
+    max-height: 100%; /* Ensure the image doesn't exceed the container height */
+    padding: 10px;
+    margin-left: 6vh;
+}
+
+.heading {
+    color: white;
+    text-align: center;
+}
+
+.controls{
+    display: grid;
+    grid-template-columns: repeat(2, 50px);
+    gap: 10px;
+    justify-content: center;
+}
+
+.control-button {
+    width: 50px;
+    height: 50px;
+    background-color: brown;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    font-size: 5vh;
+    border-radius: 1vh;
+}
+
+.game-over {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Add z-index to make sure it's above the game board */
+}
+
